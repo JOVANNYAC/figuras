@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Calculo figuras</title>
+</head>
+<body>
+    <!-- inicio seccion del cuadrado-->
+    <header>
+        <h1>Figuras geometrícas</h1>   
+    </header>
+
+    <section>
+        
+        <div class="imagen">
+            <h2>Calcula el area y perimetro de un cuadrado</h2>
+            <img src="Imagen cuadrado.jpg" alt="">
+        </div>
+
+        <form action="">
+            <label for="inputCuadrado">
+             Escribe cuanto mide cada lado de tu cuadrado
+            </label>
+                <input  id="imputCuadrado" type="number">
+            <button onclick="calcularPerimetroCuadrado()" type="button">
+               Calcular el perimetro
+            </button> 
+            <p id="resultadoPerimetroCuadrado"></p> 
+            <button onclick="calcularAreaCuadrado()" type="button">
+                Calcular el area
+            </button> 
+            
+            <p id="resultadoAreaCuadrado"></p> 
+            <button type="button" value="Actualizar" onclick="location.reload()">
+                Borrar
+            </button>
+            
+        </form>
+    </section> 
+    <!-- fin seccion del cuadrado-->
+
+    <!--inicio seccion del triangulo-->
+
+    <section>
+       
+         <div class="imagen">
+            <h2>Calcula el diametro y perimetro de un triangulo</h2>
+            <img src="Imagen triangulo.jpg" alt="">
+         </div>
+        
+        <form action="">
+            <label for="imputLado1">
+                Escribe el lado 1 del triangulo
+            </label>
+            <input id="imputLado1"  type="number"> 
+
+            <label for="imputLado2">
+                Escribe el lado 2 del triangulo
+            </label>
+            <input id="imputLado2"  type="number"> 
+
+            <label for="imputBase">
+                Escribe la base del triangulo
+            </label>
+            <input id="imputBase"  type="number"> 
+
+            <label for="imputAltura">
+                Escribe la altura del triangulo
+            </label>
+            <input id="imputAltura"  type="number"> 
+            
+
+            <button onclick="calculaPerimetroTriangulo()" type="button">Calcular perimetro</button>
+             <p id="resultadoPerimetroTriangulo"></p>
+
+            <button onclick="calculaAreaTriangulo()" type="button">Calcular area</button>
+            <p id="resultadoAreaTriangulo"></p>
+            
+            <button type="button" value="Actualizar" onclick="location.reload()">
+                Borrar
+            </button>
+        </form>
+    </section>
+    <br>
+    <!--fin seccion del triangulo-->
+
+    <!--inicio seccion del circulo-->
+    <section>
+        
+        <div class="imagen">
+            <h2>
+                Calcula el area y perimetro de un circulo
+            </h2>
+            <img src="Imagen circulo.jpg" alt="">
+        </div>
+        <form action="">
+            <label for="imputRadio">
+                Escribe el radio del circulo
+            </label>
+            <input id="input" type="number">
+            <button onclick="calculaAreaCirculo()" type="button">
+                
+                 Calcula el area del circulo
+            </button>
+            <p id="resultadoAreaCirculo"></p>
+
+            <button onclick="calculaPerimetroCirculo()" type="button">
+                 Calcula perimetro del circulo
+            </button>
+            <p id="resultadoPerimetroCirculo"></p>
+
+            <button type="button" value="Actualizar" onclick="location.reload()">
+                Borrar
+            </button>
+        </form>
+    </section>
+
+    <script src="figuras.js"></script>
+</body>
+</html>
